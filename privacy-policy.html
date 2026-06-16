@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photoboo 隐私政策 · Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f3ea;
+      --text: #1c1c1c;
+      --muted: #5c5c5c;
+      --accent: #8b5a2b;
+      --card: rgba(255, 255, 255, 0.72);
+      --border: rgba(28, 28, 28, 0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171512;
+        --text: #f2ece1;
+        --muted: #b8b0a3;
+        --accent: #d4a574;
+        --card: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.12);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.75rem;
+      line-height: 1.25;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.2rem;
+    }
+    h3 {
+      margin: 1.25rem 0 0.5rem;
+      font-size: 1rem;
+    }
+    p, li { color: var(--text); }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--accent); }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-top: 1.5rem;
+    }
+    .lang-switch {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.92em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Photoboo 隐私政策</h1>
+      <p class="meta">生效日期：2026 年 6 月 13 日 · 最后更新：2026 年 6 月 13 日</p>
+      <p class="lang-switch">
+        中文见下方 · <a href="#english">English version</a>
+      </p>
+    </header>
+
+    <p>
+      Photoboo（「我们」）是由独立开发者提供的 iOS 应用，用于摄影书收藏管理与 AI 评估。
+      本政策说明我们如何处理与你的使用相关的信息。
+    </p>
+
+    <section>
+      <h2>1. 我们收集哪些信息</h2>
+
+      <h3>1.1 你主动提供或保存在设备上的信息</h3>
+      <ul>
+        <li>收藏数据：书名、作者、ISBN、出版社、版本、装帧、购入价格/日期/来源、备注等。</li>
+        <li>封面图片：你可选择保存在设备本地收藏中。</li>
+        <li>评估历史：评估输入与生成的报告摘要，保存在设备本地。</li>
+        <li>相机/相册：仅在扫描 ISBN 或选择评估图片时使用；相关权限由系统弹窗征得同意。</li>
+      </ul>
+
+      <h3>1.2 使用 AI 评估时发送到服务器的信息</h3>
+      <p>
+        当你发起评估时，应用可能通过我们的后端服务（BFF）向云端发送：
+      </p>
+      <ul>
+        <li>文本评估：书名、作者等检索信息。</li>
+        <li>图片评估：你选择的封面/书籍图片（经短期上传凭证上传至对象存储，用于 AI 分析）。</li>
+        <li>请求标识：用于防止重复扣减与保障服务稳定性。</li>
+      </ul>
+      <p>我们不会在评估功能之外批量上传你的整个相册或通讯录。</p>
+
+      <h3>1.3 订阅与交易</h3>
+      <ul>
+        <li>订阅购买由 Apple 处理；我们会收到 Apple 签名的订阅凭证（StoreKit JWS），用于验证订阅状态与配额。</li>
+        <li>我们不会直接收集或存储你的银行卡号。</li>
+      </ul>
+
+      <h3>1.4 安全与防滥用</h3>
+      <ul>
+        <li>为防范自动化滥用，应用可能使用 Apple App Attest 等机制，向后端证明请求来自正版应用实例。</li>
+      </ul>
+
+      <h3>1.5 广告（免费用户）</h3>
+      <p>
+        若你未订阅，应用可能展示 Google AdMob 横幅广告。Google 可能依照其政策收集设备与广告相关数据。
+        详见
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 隐私政策</a>
+        与
+        <a href="https://support.google.com/admob/answer/6128543" rel="noopener noreferrer">AdMob 说明</a>。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 我们如何使用信息</h2>
+      <ul>
+        <li>提供收藏、评估、分享卡片等核心功能。</li>
+        <li>验证订阅状态、应用配额、去除广告及水印策略。</li>
+        <li>维护服务安全、防止欺诈与滥用。</li>
+        <li>改进产品体验与修复故障。</li>
+      </ul>
+      <p>我们不会出售你的个人信息。</p>
+    </section>
+
+    <section>
+      <h2>3. 数据存储与保留</h2>
+      <ul>
+        <li><strong>设备本地：</strong>收藏与评估历史默认保存在你的 iPhone/iPad 上（SwiftData）。</li>
+        <li><strong>服务器：</strong>评估相关输入/图片在服务端处理完成后，按后端策略保留或删除；上传图片使用短期凭证，不应长期公开暴露。</li>
+        <li><strong>订阅凭证：</strong>用于校验与配额记账，按服务需要保留必要交易标识。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 第三方服务</h2>
+      <ul>
+        <li><strong>Apple：</strong>App Store 订阅、StoreKit、App Attest。</li>
+        <li><strong>Google：</strong>AdMob 广告（仅未订阅用户）。</li>
+        <li><strong>云服务提供商：</strong>后端 API 与对象存储（用于 AI 评估与图片上传）。</li>
+        <li><strong>AI 服务：</strong>评估内容由后端调用的 AI 工作流生成；请勿在评估中提交与你无关的敏感个人信息。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 你的选择与权利</h2>
+      <ul>
+        <li>可在系统设置中关闭相机/相册权限（相应功能将不可用）。</li>
+        <li>可在应用内删除收藏条目；卸载应用将删除本地数据（除非系统另有备份）。</li>
+        <li>订阅可在 iOS「设置 → Apple ID → 订阅」中管理或取消。</li>
+        <li>订阅用户不展示 AdMob 横幅广告。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 儿童隐私</h2>
+      <p>
+        Photoboo 不面向 13 岁以下儿童。我们不会有意收集儿童个人信息。
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 国际用户</h2>
+      <p>
+        应用可能在不同国家/地区提供。你的信息可能在设备所在地或服务部署所在地区处理。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. 政策变更</h2>
+      <p>
+        我们可能更新本政策。重大变更时，我们会在本页面更新「最后更新」日期。
+        继续使用应用即表示你接受更新后的政策。
+      </p>
+    </section>
+
+    <section>
+      <h2>9. 联系我们</h2>
+      <p>
+        如有隐私相关问题，请通过以下方式联系：
+      </p>
+      <ul>
+        <li>
+          GitHub：
+          <a href="https://github.com/ChrisAtLondon/PhotoBook/issues">ChrisAtLondon/PhotoBook Issues</a>
+        </li>
+        <li>
+          电子邮件：
+          <!-- 如需改为专用邮箱，请替换下方地址 -->
+          <a href="mailto:privacy@askaianything.com">privacy@askaianything.com</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="english">
+      <h2>Privacy Policy (English)</h2>
+      <p class="meta">Effective date: June 13, 2026</p>
+
+      <p>
+        Photoboo (&quot;we&quot;) is an iOS app for photography book collecting and AI-powered evaluations.
+        This policy describes how we handle information related to your use of the app.
+      </p>
+
+      <h3>Information we process</h3>
+      <ul>
+        <li><strong>On-device data you provide:</strong> collection metadata, optional cover images, evaluation history.</li>
+        <li><strong>When you run an evaluation:</strong> book search text and/or an image you choose may be sent to our backend and cloud storage for AI processing.</li>
+        <li><strong>Subscriptions:</strong> purchases are processed by Apple; we verify signed StoreKit transactions to manage entitlements and usage quotas.</li>
+        <li><strong>Security:</strong> we may use Apple App Attest to reduce abuse of backend APIs.</li>
+        <li><strong>Ads (free users):</strong> Google AdMob may collect device/advertising data as described in Google&apos;s policies.</li>
+      </ul>
+
+      <h3>How we use information</h3>
+      <ul>
+        <li>Provide core app features, subscriptions, quotas, and share cards.</li>
+        <li>Protect service integrity; we do not sell personal information.</li>
+      </ul>
+
+      <h3>Your choices</h3>
+      <ul>
+        <li>Manage Camera/Photos permissions in iOS Settings.</li>
+        <li>Delete in-app collection data; uninstalling removes on-device data unless backed up by the system.</li>
+        <li>Manage subscriptions in Settings → Apple ID → Subscriptions.</li>
+      </ul>
+
+      <h3>Contact</h3>
+      <p>
+        GitHub:
+        <a href="https://github.com/ChrisAtLondon/PhotoBook/issues">ChrisAtLondon/PhotoBook Issues</a>
+        · Email:
+        <a href="mailto:privacy@askaianything.com">privacy@askaianything.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>Bundle ID: <code>com.askaianything.PhotoBook</code></p>
+    </footer>
+  </main>
+</body>
+</html>
